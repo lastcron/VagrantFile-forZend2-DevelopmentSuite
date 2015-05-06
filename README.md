@@ -59,23 +59,23 @@ DEFAULT CONFIGURATIONS & PASSWORDS
 VIRTUAL MACHINE
 -----------------------------------------
 1 CPU
-1024 MB RAM
-Folder Mapping:  Host folder Source: ./  with VM /var/www/z2
+512 MB RAM
+Folder Mapping:  Host folder Source: ./public  with VM /var/www/
 
 UBUNTU
 ------------------------------------------
-User: root
-Password: root
+User: ubuntu
+Password: ubuntu
 
 NETWORK
 ------------------------------------------
-IP: 192.168.10.1
+IP: 192.168.10.2
 Hostname: local.z2
 Defautl WebSite for Z2 Application: http://Z2Development.local  ( You will need to modify your host file locally to add this reference)
 
 MYSQL
 -------------------------------------------
-Host Address: 192.168.10.1
+Host Address: 192.168.10.2
 Port: 3306
 Root User: root
 Root Password: mysql
@@ -83,7 +83,7 @@ Connect using SSH tunnel, username vagrant and SSH key generated at puphpet/file
 
 WebMin
 ------------------------------------------
-Point your browser to: https://192.168.10.1 and use "root" and "root" as user and password respectively. This is because root is an admin site in ubuntu.
+Point your browser to: https://192.168.10.2:10000 and use "ubuntu" and "ubuntu" as user and password respectively. This is because ubuntu is an admin user.
 
 RECOMMENDATIONS TO GET STARTED
 -----------------------------------------------------------
@@ -98,6 +98,8 @@ C)MySql Workbench. To interact with the MySql Database just point a new connecti
 
 D)VirtualBox. For running vagrant virtual machine. Get it Here (https://www.virtualbox.org/wiki/Downloads)
 
+E)GIT and SSH
+
 Great! Now Lets get Started!!
 --------------------------------
 
@@ -111,7 +113,7 @@ Great! Now Lets get Started!!
 
 5.Add this to your hosts file: ( Alternatively execute the following command: vagrant install plugin vagrant-hostmanager)
 
-192.168.10.1	local.z2 Z2Development.local
+192.168.10.2	local.z2 Z2Development.local
 
 6.Browse to http://Z2Development.local in the browser, you should see the Zend Framework 2 skeleton application. 
 If you go to http://Z2Development.local/bad you should see a ZF2 404 page, not the apache 404 page. 
