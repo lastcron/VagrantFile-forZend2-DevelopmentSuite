@@ -1,4 +1,4 @@
-# VagrantFile for Zend2 Framework Development
+# VagrantFile for Zend2 Framework Development (5.2 MB Total Size )
 -------------------------------------------------------------------------------------------
 This is a Vagrant file with the entire stack and tools for Zend2 Framwework Development so you can start developing locally right away.
 
