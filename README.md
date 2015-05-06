@@ -109,8 +109,9 @@ Great! Now Lets get Started!!
 
 4.Run $ vagrant up and go grab a coffee
 
-5.Add this to your hosts file:
-192.168.10.1 Z2Development.local
+5.Add this to your hosts file: ( Alternatively execute the following command: vagrant install plugin vagrant-hostmanager)
+
+192.168.10.1	local.z2 Z2Development.local
 
 6.Browse to http://Z2Development.local in the browser, you should see the Zend Framework 2 skeleton application. 
 If you go to http://Z2Development.local/bad you should see a ZF2 404 page, not the apache 404 page. 
