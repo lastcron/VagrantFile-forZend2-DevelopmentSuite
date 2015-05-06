@@ -4,11 +4,11 @@ vagrantfile:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
         hostname: local.z2
-        memory: '1024'
+        memory: '512'
         cpus: '1'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.10.1
+            private_network: 192.168.10.2
             forwarded_port:
                 vflnp_wy6dpnuxe61u:
                     host: '7584'
@@ -33,8 +33,8 @@ vagrantfile:
                     - '--parser future'
         synced_folder:
             vflsf_o0lc0l8bnb1p:
-                source: ./
-                target: /var/www/z2
+                source: ./public
+                target: /var/www/
                 sync_type: default
                 rsync:
                     args:
@@ -69,9 +69,9 @@ server:
 users_groups:
     install: '1'
     groups:
-        - root
+        - ubuntu
     users:
-        - root
+        - ubuntu
 firewall:
     install: '1'
     rules: {  }
