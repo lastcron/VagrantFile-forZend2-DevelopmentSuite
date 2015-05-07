@@ -69,9 +69,8 @@ server:
 users_groups:
     install: '1'
     groups:
-        - ubuntu
-    users:
-        - ubuntu
+        - '{ubuntu}:{admin}'
+    users: {  }
 firewall:
     install: '1'
     rules: {  }
